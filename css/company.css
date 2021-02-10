@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+/*======================
+  ヘッダー
+=====================*/
+header{
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+}
+
+header div.flex{
+  justify-content: space-between;
+  line-height: 70px;
+}
+
+header h1{
+  padding-left: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header nav ul li{
+  font-weight: bold;
+  font-size: 16px;
+  padding-right: 30px;
+}
+/*======================
+  トップイメージ
+=====================*/
+
+.top-image{
+  height: 34vh;
+  background: url(../img/mv.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.top-image_catchcopy{
+  width: 60%;
+  font-size: 15px;
+  font-weight: bold;
+  color:#fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.top-image_catchcopy span{
+  font-size: 30px;
+  display: inline-block;
+}
+
+/*======================
+  会社概要
+=====================*/
+table{
+  width: 62%;
+  margin: 80px auto;
+}
+.company tr{
+border-top: 1px solid #222;
+}
+th{
+  width: 30%;
+  padding: 25px 0;
+  font-weight: bold;
+}
+
+td{
+  text-align: left;
+  width: 70%;
+}
+
+tr:last-child{
+  border-bottom: 1px solid #222;
+}
+/*======================
+  お問い合わせ
+=====================*/
+.contact{
+  margin-top: 50px;
+  width: 100%;
+  background-color: #e2e1e191;
+
+}
+
+.contact_wrapper{
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact_wrapper h2{
+  margin-bottom: 20px;
+}
+
+#contact_btn{
+  margin-top: 40px;
+  padding: 15px 100px;
+}
+
+/*======================
+  フッター
+=====================*/
+.footer{
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+}
+
+.footer_wrapper{
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 60px;
+  font-size: 12px;
+}
+.footer_wrapper a{
+  color: #fff;
+  padding: 0 10px;
+}
+li.line:after{
+  content: "|";
+}
+
+/*======================
+  レスポンシブ
+=====================*/
+
+@media screen and (max-width:768px){
+.hbg{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.hbg span{
+  position: absolute;
+  left: 2px;
+  display: block;
+  width: 35px;
+  height: 2px;
+  background-color: #222;
+}
+
+.hbg span:nth-of-type(1){
+  top:10px;
+}
+
+.hbg span:nth-of-type(2){
+  top: 20px;
+}
+
+.hamburger span:nth-of-type(3) {
+top: 30px;
+}
+
+header nav {
+  display: none;
+}
+
+table{
+  width: 90%;
+}
+
+.footer_wrapper{
+line-height: 2.2;
+margin-bottom: 10px;
+}
+footer small{
+  margin: 15px auto 0 auto;
+}
+footer li{
+  width: 100%;
+}
+li.line:after{
+  content: none;
+}
+}

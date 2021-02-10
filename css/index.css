@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+/*======================
+  ヘッダー
+=====================*/
+header{
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+}
+
+header div.flex{
+  justify-content: space-between;
+  line-height: 70px;
+}
+
+header h1{
+  padding-left: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header nav ul li{
+  font-weight: bold;
+  font-size: 16px;
+  padding-right: 30px;
+}
+/*======================
+  トップイメージ
+=====================*/
+
+.top-image{
+  height: 80vh;
+  background: url(../img/mv.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.top-image_catchcopy{
+  width: 60%;
+  font-size: 18px;
+  font-weight: bold;
+  color:#fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.top-image_catchcopy span{
+  font-size: 50px;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.top-image_text{
+  color: #fff;
+  background-color: #222;
+  width: 100%;
+  text-align: left;
+}
+
+.top-text{
+  margin:0 auto;
+  width: 70%;
+  padding: 80px 0;
+}
+.top-text p{
+  line-height: 1.5;
+  margin-top: 20px;
+}
+.top-text p span{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*======================
+  サービス
+=====================*/
+.service{
+  width: 70%;
+  margin:0 auto;
+}
+
+.service h2{
+  padding: 30px 0;
+  margin-top: 80px;
+}
+.service_content{
+  width: 48%;
+  margin-right:2%;
+  text-align: left;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+.service_content h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service_btn{
+  padding:15px 70px;
+  background-color: rgb(192, 2, 2);
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/*======================
+  ニュース
+=====================*/
+
+.news{
+  width: 100%;
+  height: 450px;
+  background-color: #222;
+  margin:80px 0;
+}
+
+.news_wrapper{
+  width: 70%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+#news_flex{
+  justify-content: space-between;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+} 
+
+#news_flex h2{
+  color: #fff;
+}
+
+#news_btn{
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(192, 2, 2);
+}
+
+.news_content a{
+  padding: 25px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.news_content span{
+  padding-left: 10px;
+  font-weight: bold;
+}
+.news_content a{
+  display: block;
+}
+
+/*======================
+  社員ブログ
+=====================*/
+
+.blog{
+  padding-top: 80px;
+  margin-bottom: 50px;
+}
+
+.blog h2{
+  margin-bottom: 20px;
+}
+
+.blog_wrapper{
+  width: 70%;
+  margin: 0 auto 10px auto;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.blog_text{
+  width: 31%;
+  margin: 1%;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.blog_text p{
+  font-size: 14px;
+}
+
+/*======================
+  会社概要、採用情報
+=====================*/
+.company_container,.recruit_container{
+  width: 50%;
+  text-align: center;
+}
+
+.btn{
+  display: block;
+  color: #fff;
+  line-height: 9;
+}
+
+#company_btn{
+ background-color: rgb(192, 2, 2);
+}
+
+#recruit_btn{
+  background-color: #222;
+}
+
+.company h2{
+  font-size: 25px;
+}
+
+/*======================
+  お問い合わせ
+=====================*/
+.contact{
+  margin-top: 50px;
+  width: 100%;
+  background-color: #e2e1e191;
+
+}
+
+.contact_wrapper{
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact_wrapper h2{
+  margin-bottom: 20px;
+}
+
+#contact_btn{
+  margin-top: 40px;
+  padding: 15px 100px;
+}
+
+/*======================
+  フッター
+=====================*/
+footer{
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+}
+
+.footer_wrapper{
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 60px;
+  font-size: 12px;
+}
+.footer_wrapper a{
+  color: #fff;
+  padding: 0 10px;
+}
+li.line:after{
+  content: "|";
+}
+
+/*======================
+  レスポンシブ
+=====================*/
+
+@media screen and (max-width:768px){
+  .hbg{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .hbg span{
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #222;
+  }
+
+  .hbg span:nth-of-type(1){
+    top:10px;
+  }
+
+  .hbg span:nth-of-type(2){
+    top: 20px;
+  }
+
+  .hamburger span:nth-of-type(3) {
+  top: 30px;
+}
+
+header nav {
+  display: none;
+}
+
+.service{
+  width: 90%;
+}
+.service_content{
+  width: 100%;
+}
+.news{
+  height:360px;
+}
+.news_wrapper{
+  width: 80%;
+}
+
+.news_content a{
+  font-size: 14px;
+  padding: 15px;
+}
+
+.blog_wrapper{
+  width: 90%;
+}
+.blog_text{
+  width: 100%;
+}
+.footer_wrapper{
+line-height: 2.2;
+margin-bottom: 10px;
+}
+footer small{
+  margin: 15px auto 0 auto;
+}
+footer li{
+  width: 100%;
+}
+li.line:after{
+  content: none;
+}
+}
